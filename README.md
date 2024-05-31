@@ -70,3 +70,17 @@ Access a library of articles and tips on how to stay safe from scams.
 ![Home Screen](path/to/home_screen.png)
 ![Upload Screen](path/to/upload_screen.png)
 ![Verification Result](path/to/verification_result.png)
+
+## Our Team
+
+Welcome to our team page! Meet the talented individuals driving our projects forward:
+
+Low Ye Yang, Caleb [LinkedIn](https://www.linkedin.com/in/caaleb/) | [GitHub](https://github.com/ca-leb)
+
+Gui Ling Ling [LinkedIn](https://www.linkedin.com/in/linglingg/) | [GitHub](https://github.com/ling-ui)
+
+Yap Zher Xiang, Jason [LinkedIn](https://www.linkedin.com/in/ja-sony/) | [GitHub](https://github.com/JasonYapzx/)
+
+Yeo Yu Jie [LinkedIn](https://www.linkedin.com/in/yeoyujie/) | [GitHub](https://github.com/yeoyujie)
+
+Together, we form a dynamic team dedicated to pushing boundaries and delivering exceptional results. Connect with us to learn more about our projects and achievements.
