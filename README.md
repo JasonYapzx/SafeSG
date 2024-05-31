@@ -1,4 +1,6 @@
-# SafeSG
+# SafeSG: Your Shield Against Scams
+
+![SafeSG Logo](SafeSG-Logo.png)
 
 SafeSG is a community-driven platform designed to protect users, especially the elderly, from scammers and phishing attempts. Users can upload screenshots of suspicious calls and emails, and our app will analyze the data using advanced AI techniques such as Language Model Testing (LLM) and Optical Character Recognition (OCR) to identify potential scams. By leveraging community reports and AI-driven validation techniques, SafeSG helps keep users informed and safe, even those with limited technical literacy who are most vulnerable to financial scams such as phishing/smishing.
 
