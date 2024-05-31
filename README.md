@@ -1,6 +1,6 @@
 # SafeSG
 
-SafeSG is a community-driven platform designed to protect users, especially the elderly, from scammers and phishing attempts. Users can upload screenshots of suspicious calls and emails, and our app will analyze the data to identify potential scams. By leveraging community reports and advanced validation techniques, SafeSG helps keep users informed and safe.
+SafeSG is a community-driven platform designed to protect users, especially the elderly, from scammers and phishing attempts. Users can upload screenshots of suspicious calls and emails, and our app will analyze the data using advanced AI techniques such as Language Model Testing (LLM) and Optical Character Recognition (OCR) to identify potential scams. By leveraging community reports and AI-driven validation techniques, SafeSG helps keep users informed and safe, even those with limited technical literacy who are most vulnerable to financial scams such as phishing/smishing.
 
 ## Table of Contents
 
@@ -15,11 +15,13 @@ SafeSG is a community-driven platform designed to protect users, especially the 
 
 ## Introduction
 
-SafeSG is developed to combat the rising threat of scams and phishing attempts. With an intuitive interface and powerful backend, SafeSG allows users to quickly and easily report and verify suspicious activities.
+SafeSG is developed to combat the rising threat of scams and phishing attempts. With an intuitive interface and powerful backend, SafeSG allows users to quickly and easily report and verify suspicious activities, making it accessible and user-friendly for individuals of all technical backgrounds.
 
 ## Features
 
 - **Screenshot Upload:** Users can upload screenshots of incoming calls and emails.
+- **Text Extraction:** SafeSG employs advanced Text Extraction techniques, including Language Model Testing (LLM), to extract text from screenshots automatically.
+- **Message Analysis:** Utilizing LLM, SafeSG analyzes the extracted text from screenshots to identify potential scam content and phishing attempts.
 - **Phone Number Verification:** Extracts phone numbers from screenshots and checks against a database of known scam numbers.
 - **Email Validation:** Extracts email addresses from screenshots and verifies their legitimacy by checking against official bank emails and known scam lists.
 - **Community Reports:** A crowdsourced database where users can report and share their experiences with scams.
@@ -70,6 +72,8 @@ Access a library of articles and tips on how to stay safe from scams.
 ![Home Screen](path/to/home_screen.png)
 ![Upload Screen](path/to/upload_screen.png)
 ![Verification Result](path/to/verification_result.png)
+
+## Coming Soon
 
 ## Our Team
 
