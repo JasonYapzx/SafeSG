@@ -9,6 +9,7 @@ import Tesseract from "tesseract.js";
 import ScamEntry from "./models/scamEntry.js";
 import router from "./routes/index.js";
 import { checkScam } from "./controller/index.js";
+import { askOllama } from "./routes/index.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -44,12 +45,12 @@ const upload = multer({ storage });
 app.post("/api/check_scam_image", upload.single("image"), async (req, res) => {
   const filePath = path.join(__dirname, "../uploads", req.file.filename);
 
-  Tesseract.recognize(filePath, "eng")
-    .then((result) => {
-      const resp = checkScam(result.data.text)
+  await Tesseract.recognize(filePath, "eng")
+    .then(async (result) => {
+      const resp = await askOllama(result.data.text);
       res.status(200).json(resp);
     })
-    .catch((error) => {
+    .catch(async (error) => {
       res.status(500).json({ error: "Error extracting text from image." });
     });
 });

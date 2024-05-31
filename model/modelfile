@@ -37,6 +37,8 @@ I want you to output in the same format, ONLY return the following JSON values, 
     "isScam": boolean based on number,
     "percentage": number based on FORMULA,
     "scamPatterns": [list of strings]
-    "summary": reason why it might be a scam
+    "summary": reason why it might be a scam - LIMIT THIS TO 25 words maximum.
 }
+
+Ensure that the return format is of a correct JSON format.
 """
