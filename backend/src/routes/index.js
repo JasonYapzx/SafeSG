@@ -1,7 +1,7 @@
 import express from "express";
 import ScamEntry from "../models/scamEntry.js";
 import { checkScam } from "../controller/index.js";
-import ollama from 'ollama';
+import ollama from "ollama";
 
 const router = express.Router();
 
@@ -24,9 +24,9 @@ router.get("/scam_entry", async (req, res) => {
   }
 });
 
-router.post("/check_scam", (req, res) => {
+router.post("/check_scam", async (req, res) => {
   const { text } = req.body;
-  const responseBody = checkScam(text);
+  const responseBody = await askOllama(text);
 
   res.json(responseBody);
 });
@@ -49,4 +49,22 @@ router.post("/ask-query", async (req, res) => {
   }
 });
 
+async function askOllama(query) {
+  try {
+    const response = await ollama.chat({
+      model: "sgsmodel",
+      messages: [{ role: "user", content: query }],
+    });
+    
+    console.log(response.message.content)
+    const jsonObject = JSON.parse(response.message.content)
+
+    return jsonObject
+  } catch (error) {
+    console.error("Error asking query:", error);
+  }
+}
+
 export default router;
+
+export { askOllama };
