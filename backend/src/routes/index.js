@@ -1,6 +1,7 @@
 import express from "express";
 import ScamEntry from "../models/scamEntry.js";
 import { checkScam } from "../controller/index.js";
+import ollama from 'ollama';
 
 const router = express.Router();
 
@@ -28,6 +29,24 @@ router.post("/check_scam", (req, res) => {
   const responseBody = checkScam(text);
 
   res.json(responseBody);
+});
+
+router.post("/ask-query", async (req, res) => {
+  try {
+    const { query } = req.body;
+
+    const response = await ollama.chat({
+      model: "sgsmodel",
+      messages: [{ role: "user", content: query }],
+    });
+
+    res.json({ reply: response.message.content });
+  } catch (error) {
+    console.error("Error asking query:", error);
+    res
+      .status(500)
+      .json({ error: "An error occurred while processing the query." });
+  }
 });
 
 export default router;
