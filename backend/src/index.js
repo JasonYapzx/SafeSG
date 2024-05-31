@@ -8,6 +8,7 @@ import path from "path";
 import Tesseract from "tesseract.js";
 import ScamEntry from "./models/scamEntry.js";
 import router from "./routes/index.js";
+import { checkScam } from "./controller/index.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -40,12 +41,13 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-app.post("/api/extract-text", upload.single("image"), async (req, res) => {
+app.post("/api/check_scam_image", upload.single("image"), async (req, res) => {
   const filePath = path.join(__dirname, "../uploads", req.file.filename);
 
   Tesseract.recognize(filePath, "eng")
     .then((result) => {
-      res.status(200).json({ text: result.data.text });
+      const resp = checkScam(result.data.text)
+      res.status(200).json(resp);
     })
     .catch((error) => {
       res.status(500).json({ error: "Error extracting text from image." });
