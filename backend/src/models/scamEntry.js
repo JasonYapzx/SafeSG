@@ -11,7 +11,7 @@ const ScamEntry = sequelize.define('scam_entry', {
     type: DataTypes.STRING,
     allowNull: false
   },
-  created: {
+  created_time: {
     type: DataTypes.DATE,
     defaultValue: DataTypes.NOW,
     allowNull: false
