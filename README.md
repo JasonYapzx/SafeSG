@@ -110,7 +110,7 @@ Make sure that all three components - frontend, backend, and Language Model (LLM
 
 ### Home Screen & Info Page
 
-Welcome to SafeSG! Protect yourself from scams by uploading screenshots of suspicious calls, texts, or emails. Tap "Check for Scam" to get started.
+Welcome to SafeSG! Protect yourself from scams by uploading screenshots of suspicious calls, texts, or emails. 
 
 <p align="center">
   <img src="misc/SafeSG-home.jpeg" alt="Home Screen" height="600"/>
