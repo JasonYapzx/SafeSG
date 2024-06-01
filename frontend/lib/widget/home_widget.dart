@@ -117,7 +117,7 @@ void _showHelpDialog(BuildContext context) {
         ),
         const SizedBox(height: 20),
         RoundedButton(
-          text: 'Report scam',
+          text: 'Help',
           onPressed: () => _showHelpDialog(context),
           buttonWidth: 230,
           buttonHeight: 65,

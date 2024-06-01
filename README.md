@@ -28,11 +28,11 @@ SafeSG is developed to combat the rising threat of scams and phishing attempts. 
 
 ### Setting Up Flutter Frontend
 
-#### Step 1: Install Flutter
+### Step 1: Install Flutter
 
 Follow the official [Flutter installation guide](https://flutter.dev/docs/get-started/install) to install Flutter on your development machine. Ensure that you have Flutter properly installed and configured before proceeding to the next steps.
 
-#### Step 2: Clone the Repository
+### Step 2: Clone the Repository
 
 Clone the SafeSG repository from GitHub to your local machine using the following commands in your terminal:
 
@@ -40,9 +40,13 @@ Clone the SafeSG repository from GitHub to your local machine using the followin
 git clone https://github.com/yourusername/SafeSG.git
 cd SafeSG
 ```
+
 Replace yourusername with your GitHub username.
 
 ### Step 3: Install Dependencies
+
+Make sure flutter is installed beforehand. You can refer to [here](https://docs.flutter.dev/get-started/install/windows/desktop?tab=download).
+
 Navigate to the frontend directory within the SafeSG repository and install the necessary dependencies by running the following command:
 
 ```sh
@@ -53,10 +57,17 @@ flutter pub get
 This will install all the required packages for the Flutter frontend.
 
 ### Step 4: Run Flutter
+
 Once the dependencies are installed, you can run the SafeSG application using the following command:
 
 ```sh
 flutter run
+```
+
+For your convenience, you can test on web browser such as chrome.
+
+```sh
+flutter run -d chrome
 ```
 
 ### Step 5: Installing Ollama
@@ -83,13 +94,17 @@ Replace `model/modelfile` with the path to your model file.
 
 ### Step 6: Running Your Application
 
-Ensure that Ollama is running locally before starting your application. You can start your application by running 
+Ensure that Ollama is running locally before starting your application. You can start your application by running
 
 ```
 npm start
 ```
 
 This will start the backend and run your application, allowing it to interact with Ollama.
+
+### Step 7: Ensure all 3 of your frontend, backend and LLM is running.
+
+Make sure that all three components - frontend, backend, and Language Model (LLM) - are set up and running properly to ensure the app functions as intended. With everything in place, you'll never have to worry about getting scammed again. Have fun!
 
 ## Usage
 
