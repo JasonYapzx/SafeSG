@@ -95,7 +95,7 @@ This will start the backend and run your application, allowing it to interact wi
 
 ### Home Screen & Info Page
 
-Welcome to SafeSG! Protect yourself from scams by uploading screenshots of suspicious calls, texts, or emails. Tap "Check for Scam" to get started.
+Welcome to SafeSG! Protect yourself from scams by uploading screenshots of suspicious calls, texts, or emails. 
 
 <p align="center">
   <img src="misc/SafeSG-home.jpeg" alt="Home Screen" height="600"/>
