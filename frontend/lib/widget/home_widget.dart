@@ -80,6 +80,29 @@ Future<void> _uploadImage(BuildContext context, Uint8List imageBytes, String fil
   }
 }
 
+void _showHelpDialog(BuildContext context) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text('How to use'),
+        content: Text(
+          '1. Press the "Check for scam" button to select an image from your gallery.\n'
+          '2. The app will analyze the image and determine if it contains any scam patterns.\n'
+          '3. You will be redirected to the results page where you can see the analysis results.'
+        ),
+        actions: <Widget>[
+          TextButton(
+            child: Text('Close'),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+        ],
+      );
+    },
+  );
+}
 
 
   @override
@@ -95,7 +118,7 @@ Future<void> _uploadImage(BuildContext context, Uint8List imageBytes, String fil
         const SizedBox(height: 20),
         RoundedButton(
           text: 'Report scam',
-          onPressed: () => _pickAndUploadImage(context),
+          onPressed: () => _showHelpDialog(context),
           buttonWidth: 230,
           buttonHeight: 65,
         ),
