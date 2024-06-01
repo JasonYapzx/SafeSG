@@ -1,19 +1,8 @@
 # SafeSG: Your Shield Against Scams
 
-![SafeSG Logo](SafeSG-Logo.png)
+![SafeSG Logo](misc/SafeSG-Logo.png)
 
-SafeSG is a community-driven platform designed to protect users, especially the elderly, from scammers and phishing attempts. Users can upload screenshots of suspicious calls and emails, and our app will analyze the data using advanced AI techniques such as Language Model Testing (LLM) and Optical Character Recognition (OCR) to identify potential scams. By leveraging community reports and AI-driven validation techniques, SafeSG helps keep users informed and safe, even those with limited technical literacy who are most vulnerable to financial scams such as phishing/smishing.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [Support](#support)
-- [License](#license)
+SafeSG is a community-driven platform designed to protect users, especially the elderly, from scammers and phishing attempts. Users can upload screenshots of suspicious calls and emails, and our app will analyze the data using advanced AI techniques such as Language Model Testing (LLM) and Optical Character Recognition (OCR) to identify potential scams. By leveraging community reports and AI-driven validation techniques, SafeSG helps keep users informed and safe, even those with limited technical literacy who are most vulnerable to financial scams such as phishing/smishing. You can read more about our [Business Case](misc/BusinessCase.pdf) here.
 
 ## Introduction
 
@@ -41,20 +30,31 @@ SafeSG is developed to combat the rising threat of scams and phishing attempts. 
 
 ## Usage
 
-### Sign Up / Log In
+### Home Screen & Info Page
 
-Create an account or log in to access the app’s features.
+Welcome to SafeSG! Protect yourself from scams by uploading screenshots of suspicious calls, texts, or emails. Tap "Check for Scam" to get started.
+
+![Home Screen](misc/SafeSG-home.jpeg)
+![Info Page](misc/SafeSG-info.jpeg)
 
 ### Upload Screenshots
 
-1. Tap on the "Upload" button.
+1. Tap on the "Check for Scam" button.
 2. Select a screenshot of an incoming call or email.
-3. The app will automatically extract phone numbers or email addresses.
+3. The app will automatically extract phone numbers or email addresses and the message content.
+
+![Upload Screenshots](misc/SafeSG-check.jpeg)
+![Upload Screenshots](misc/SafeSG-howto.jpeg)
 
 ### Verification
 
 1. The extracted data is checked against our database of known scam numbers and emails.
 2. Users receive immediate feedback on whether the number or email is likely to be a scam.
+
+![Verification](misc/SafeSG-safe.jpeg)
+![Verification](misc/SafeSG-scam.jpeg)
+
+## Coming Soon
 
 ### Reporting
 
@@ -68,14 +68,6 @@ Enable notifications to receive real-time alerts about new scams reported in you
 ### Educational Resources
 
 Access a library of articles and tips on how to stay safe from scams.
-
-## Screenshots
-
-![Home Screen](path/to/home_screen.png)
-![Upload Screen](path/to/upload_screen.png)
-![Verification Result](path/to/verification_result.png)
-
-## Coming Soon
 
 ## Our Team
 
