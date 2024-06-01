@@ -35,8 +35,8 @@ SafeSG is developed to combat the rising threat of scams and phishing attempts. 
 Welcome to SafeSG! Protect yourself from scams by uploading screenshots of suspicious calls, texts, or emails. Tap "Check for Scam" to get started.
 
 <p align="center">
-  <img src="misc/SafeSG-home.jpeg" alt="Home Screen" height="400"/>
-  <img src="misc/SafeSG-info.jpeg" alt="Info Page" height="400"/>
+  <img src="misc/SafeSG-home.jpeg" alt="Home Screen" height="600"/>
+  <img src="misc/SafeSG-info.jpeg" alt="Info Page" height="600"/>
 </p>
 
 ### Upload Screenshots
@@ -46,8 +46,8 @@ Welcome to SafeSG! Protect yourself from scams by uploading screenshots of suspi
 3. The app will automatically extract phone numbers or email addresses and the message content.
 
 <p align="center">
-  <img src="misc/SafeSG-check.jpeg" alt="Upload Screenshots" height="400"/>
-  <img src="misc/SafeSG-howto.jpeg" alt="Upload Screenshots" height="400"/>
+  <img src="misc/SafeSG-check.jpeg" alt="Upload Screenshots" height="600"/>
+  <img src="misc/SafeSG-howto.jpeg" alt="Upload Screenshots" height="600"/>
 </p>
 
 ### Verification
@@ -56,8 +56,8 @@ Welcome to SafeSG! Protect yourself from scams by uploading screenshots of suspi
 2. Users receive immediate feedback on whether the number or email is likely to be a scam.
 
 <p align="center">
-  <img src="misc/SafeSG-safe.jpeg" alt="Verification" height="400"/>
-  <img src="misc/SafeSG-scam.jpeg" alt="Verification" height="400"/>
+  <img src="misc/SafeSG-safe.jpeg" alt="Verification" height="600"/>
+  <img src="misc/SafeSG-scam.jpeg" alt="Verification" height="600"/>
 </p>
 
 ## Coming Soon
